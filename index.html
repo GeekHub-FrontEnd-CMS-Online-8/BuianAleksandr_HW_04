@@ -7,15 +7,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
   <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
-  <!-- <script src="./js/main.js"></script> -->
+  
 </head>
 <body>
   
   <header class="wellcome">
-      <div class="burger-wraper"><span class="burger"></span></div> 
+    <nav>
+      <div class="burger-wraper" id='show-nav'><span class="burger"></span></div>
+      <div class="modal" id='main-nav'>
+          
+        <div class="modal-content popUPnav" >
+            <span class="close"></span>
+          <ul class="nav-links">
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Services</a></li>             
+            <li><a href="#">My Works</a></li>
+            <li><a href="#">Clients</a></li>             
+          </ul>
+        <hr/>
+        <ul class="sotial-links-list">
+          <li><a class="sotial-link" href="#"></a></li>
+          <li><a class="sotial-link" href="#"></a></li>
+          <li><a class="sotial-link" href="#"></a></li>
+          <li><a class="sotial-link" href="#"></a></li>
+        </ul>
+        <ul class="select-leng">
+          <li>eng</li>
+        </ul>
+        </div>
+        
+      </div>
+    </nav>
+       
       
       <div class="hero">  
-        <div class="profile-picture"></div>
+        <div class="profile-picture">
+
+        </div>
         
         <h1>free portfolio PSD template 
         FOR GRAPHIC designerS
@@ -31,12 +59,12 @@
           nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
           numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
         </p>
-        <button class="bg-button">hire me</button>
+        <button name="hire-me" class="bg-button">hire me</button>
         
       </div>
-  <span class="arrow"></span>
+  <a href="#about" class='enter'><span class="arrow"></span></a> 
   </header>
-  <section class="about">
+  <section class="about" id='about'>
     <header class="section-header">
       <h2>About Me</h2>
     </header>
@@ -178,26 +206,44 @@
         This site uses cookies, so that my service can work better.
       </span>
       
-      <button class="sm-button">Accept</button>
+      <button class="sm-button" id='accept-cooki'>Accept</button>
     </div>
   </div>
-  <!--<div class='hire-me'>
-     <div class="center-block">
-      <span>
-        This site uses cookies, so that my service can work better.
-      </span>
+  <div class='modal work-view'>
+     <div class=" modal-content ">
+       <div class='modal-head'>
+         <div class="modal-label">
+           <!-- <img src="./img/Inteligentny_obiekt_wektorowy2.png" alt=''/> -->
+            <h2>Portfolio PSD Template</h2>
+         </div>
+         
+         <ul class="tags">
+           <li><a href="#">web</a></li>
+            <li><a href="#">portfolio</a></li>
+            <li><a href="#">template</a></li>
+         </ul>
+       </div>
+       <div class='modal-body'>
+         <img src="./img/Work-view.png" width="1140"/>
+
+
+       </div>
+
+       
+   
   
-      <button class="sm-button">Accept</button>
+    
     </div>
-  </div> -->
+  </div>
   <footer >
       <div class="wraper"><span> Need a graphic designer? <strong>Ready to work!</strong></span>
-      <button class="bg-button">hire me</button>
+      <button name="hire-me" class="bg-button">hire me</button>
     
       
 
       </div>  
   </footer> 
+  <script src="./js/main.js"></script> 
   
   
 </body>
